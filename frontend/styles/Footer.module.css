@@ -1,0 +1,15 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #4A5966 ;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

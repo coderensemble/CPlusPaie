@@ -1,0 +1,25 @@
+.blocPictText {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img1 {
+  height: 40vh;
+  width: 20vw;
+  background-color: #5a739a;
+  margin: 5%;
+}
+
+.img2 {
+  height: 40vh;
+  width: 20vw;
+  background-color: #EB5E59;
+  margin: 5%;
+}
+
+.img3 {
+  height: 40vh;
+  width: 20vw;
+  background-color: #BFD6E7;
+  margin: 5%;
+}
