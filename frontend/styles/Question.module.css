@@ -1,13 +1,17 @@
 .blocPictText {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .img1 {
   height: 40vh;
   width: 20vw;
-  background-color: #5a739a;
+  background-color: transparent;
   margin: 5%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .img2 {
@@ -23,3 +27,4 @@
   background-color: #BFD6E7;
   margin: 5%;
 }
+

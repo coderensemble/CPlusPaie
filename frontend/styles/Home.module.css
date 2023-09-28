@@ -10,4 +10,6 @@
 .title {
   line-height: 1.15;
   font-size: 4rem;
+  display: flex;
+  text-align: center;
 }

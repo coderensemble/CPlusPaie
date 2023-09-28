@@ -1,0 +1,62 @@
+/* Contact.module.css */
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem; /* Ajoutez un padding pour l'espace autour du contenu */
+  }
+  
+  .contactForm {
+    flex: 1; /* Remplit l'espace disponible */
+    padding: 1rem;
+  }
+  
+  .heading {
+    font-size: 24px; /* Augmentation de la taille de la police pour le titre */
+    margin-bottom: 1rem; /* Ajout d'une marge inférieure pour le titre */
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%; /* Remplissage de la largeur disponible */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  

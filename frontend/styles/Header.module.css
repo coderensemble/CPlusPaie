@@ -1,0 +1,27 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contentMenu {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background-color: #5a739a;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contentMenu:hover {
+  background-color: #eb5e59;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+}

@@ -8,7 +8,7 @@ function Home() {
       <main className={styles.main}>
         <Image src={logo} alt="logo" />
         <h1 className={styles.title}>
-          Welcome to 
+          Votre partenaire en gestion de paie! 
         </h1>
       </main>
     </div>

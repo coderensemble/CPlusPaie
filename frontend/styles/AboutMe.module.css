@@ -1,3 +1,9 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .containerPict {
     height: 60vh;
     width: 40vw;
