@@ -12,13 +12,15 @@
 
 .contentMenu {
   margin-top: 1rem;
-  padding: 1rem 3rem;
-  background-color: #5a739a;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1rem;
+  background-color: rgba(90, 115, 154, 0.5);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 2);
+  border-radius: 5px;
 }
 
 .contentMenu:hover {
   background-color: #eb5e59;
+  cursor: pointer;
 }
 
 .menu a {
