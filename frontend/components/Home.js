@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <div>
+    <div className={styles.body}>
       <main className={styles.main}>
         <Image src={logo} alt="logo" />
         <h1 className={styles.title}>
