@@ -15,6 +15,7 @@ function Contact() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.textContainer}>
+        <h2>Pour les bonnes affaires</h2>
         <button className={styles.button} onClick={openPopup}>
           Demande de devis
         </button>
