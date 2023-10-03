@@ -1,62 +1,82 @@
 /* Contact.module.css */
 
 .mainContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem; /* Ajoutez un padding pour l'espace autour du contenu */
-  }
-  
-  .contactForm {
-    flex: 1; /* Remplit l'espace disponible */
-    padding: 1rem;
-  }
-  
-  .heading {
-    font-size: 24px; /* Augmentation de la taille de la police pour le titre */
-    margin-bottom: 1rem; /* Ajout d'une marge inférieure pour le titre */
-  }
-  
-  .inputContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .input,
-  .textarea {
-    width: 100%; /* Remplissage de la largeur disponible */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-  }
-  
-  .textarea {
-    resize: vertical;
-    min-height: 150px;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  
-  .imageContainer {
-    flex: 1;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: center;
+}
 
-  
+.button {
+  background-color: #161616; 
+  border-radius: 5px;
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3; 
+}
+
+.textContainer {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* border: 1px solid black */
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.contactForm {
+  flex: 1;
+  padding: 1rem;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.imageContainer {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
