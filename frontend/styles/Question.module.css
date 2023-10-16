@@ -1,3 +1,11 @@
+@keyframes reveal {
+  0% {opacity:0;width:0px;}
+  20% {opacity:0;width:0px;}
+  30% {width:355px;}
+  80% {opacity:1;}
+  100% {opacity:0;width:355px;}
+}
+
 .container {
   height: 200vh;
   width: 100vw;
@@ -7,6 +15,7 @@
   display: grid;
   grid-template-rows: repeat(3, 60vh);
   grid-template-columns: repeat(2, 50vw);
+  gap: 20px;
 }
 
 .img1 {
@@ -22,6 +31,7 @@
 }
 
 .textContainer1 {
+  width: 30vw;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
@@ -29,9 +39,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
+
 }
 
 .textContainer2 {
+  width: 30vw;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
@@ -40,6 +53,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 
 .img2 {
@@ -51,6 +65,7 @@
   grid-column-start: 2;
   grid-column-end: 3;
   margin-top: 10vh;
+  margin-left: 10vw;
 }
 
 .img3 {
@@ -66,6 +81,7 @@
 }
 
 .textContainer3 {
+  width: 30vw;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 2;
@@ -73,4 +89,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
+  animation: reveal 7s infinite;
 }
+
+.title {
+  margin-bottom: 10px;
+}
+
