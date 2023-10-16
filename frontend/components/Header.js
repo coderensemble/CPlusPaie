@@ -2,7 +2,6 @@ import styles from "../styles/Header.module.css";
 import Link from "next/link";
 import React from "react";
 
-
 function Header() {
   return (
     <div className={styles.menu}>
@@ -11,18 +10,26 @@ function Header() {
           HOME
         </Link>
       </div>
-      <Link href="/#section1" className={styles.section}>
-        <div className={styles.contentMenu}>QUESTION</div>
-      </Link>
-      <Link href="/#section2" className={styles.section}>
-        <div className={styles.contentMenu}>TEMOIGNAGES</div>
-      </Link>
-      <Link href="/#section3" className={styles.section}>
-        <div className={styles.contentMenu}>ABOUT ME</div>
-      </Link>
-      <Link href="/#section4" className={styles.section}>
-        <div className={styles.contentMenu}>CONTACT</div>
-      </Link>
+      <div className={styles.contentMenu}>
+        <Link href="/#section1" className={styles.section}>
+          QUESTION
+        </Link>
+      </div>
+      <div className={styles.contentMenu}>
+        <Link href="/#section2" className={styles.section}>
+          TEMOIGNAGES
+        </Link>
+      </div>
+      <div className={styles.contentMenu}>
+        <Link href="/#section3" className={styles.section}>
+          ABOUT ME
+        </Link>
+      </div>
+      <div className={styles.contentMenu}>
+        <Link href="/#section4" className={styles.section}>
+          CONTACT
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import styles from '../styles/Home.module.css';
-import logo from '../assets/image 5.png';
+import logo from '../assets/logo couleur png.png';
 import Image from "next/image";
 
 function Home() {
