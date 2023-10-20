@@ -1,14 +1,23 @@
 @keyframes reveal {
-  0% {opacity:0;width:0px;}
-  20% {opacity:0;width:0px;}
-  30% {width:355px;}
-  80% {opacity:1;}
-  100% {opacity:0;width:355px;}
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .container {
   height: 200vh;
   width: 100vw;
+  margin-top: 10vh;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .grid {
@@ -18,29 +27,117 @@
   gap: 20px;
 }
 
-.img1 {
-  height: 40vh;
-  width: 20vw;
-  border: 1px #eb5e59 solid;
+.div1 {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
+}
+
+.divImg1 {
   margin-top: 10vh;
   margin-left: 20vw;
+  position: absolute;
+  /* background-color: #eb5e59; */
+}
+
+.title1 {
+  width: 17vw;
+  position: absolute;
+  z-index: 1;
+  animation: reveal 2s ease-in-out;
+  top: 10vh;
+  left: 50rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.701);
+}
+
+.title1:hover {
+  opacity: 0;
+}
+
+/* .divImg1 .title1 {
+  margin-top: 0vh;
+  margin-left: 0rem;
+  transition: margin 0.3s ease-in-out;
+} */
+
+.divImg1:hover .title1 {
+  opacity: 0;
+}
+
+.img1 {
+  height: 40vh;
+  width: 20vw;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%);
+  /* transition: all .5s cubic-bezier(0.645, 0.1, 0.355, 1), transform 0.5s ease-in-out; */
+  /* position: absolute; */
+}
+
+.divImg1:hover .img1 {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.divImg1 .glowWrap {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* margin-top: -10px; */
+}
+
+.divImg1 .glow {
+  position: absolute;
+  width: 55%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 20vw;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.divImg1:hover .glow {
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.divImg1:hover .img1,
+.divImg1:hover .glowWrap {
+  margin-top: 2vh;
 }
 
 .textContainer1 {
+  opacity: 0;
   width: 30vw;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
-  display: flex;
+  /* display: flex; */
+  left: 25%;
+  margin-top: 10%;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 1vh;
+  transform: translateX(100%) scale(1);
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+}
 
+.divImg1:hover + .textContainer1 {
+  opacity: 1;
 }
 
 .textContainer2 {
@@ -54,9 +151,16 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  transform: translateX(-100%) scale(1);
+  transition: transform 0.5s ease-in-out;
 }
 
-.img2 {
+.textContainer2:hover {
+  transform: scale(1.1);
+}
+
+/* .img2 {
+  position: absolute;
   height: 40vh;
   width: 20vw;
   background-color: #eb5e59;
@@ -66,9 +170,12 @@
   grid-column-end: 3;
   margin-top: 10vh;
   margin-left: 10vw;
-}
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+} */
 
 .img3 {
+  position: absolute;
   height: 40vh;
   width: 20vw;
   background-color: #bfd6e7;
@@ -78,6 +185,8 @@
   grid-column-end: 2;
   margin-top: 10vh;
   margin-left: 20vw;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
 }
 
 .textContainer3 {
@@ -90,10 +199,26 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  animation: reveal 7s infinite;
+  transform: translateX(100%) scale(1);
+  transition: transform 0.5s ease-in-out;
 }
 
-.title {
-  margin-bottom: 10px;
+.textContainer3:hover {
+  transform: scale(1.1);
 }
 
+.slideInImage {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* .slideInText {
+  transform: translateX(0);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+} */
+
+.avantage {
+  color: #eb5e59;
+}

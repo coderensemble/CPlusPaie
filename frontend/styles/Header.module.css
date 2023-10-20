@@ -18,11 +18,15 @@
 }
 
 .contentMenu:hover {
-  background-color: #eb5e59;
+  background-color: #F7F5FA;
   cursor: pointer;
 }
 
 .menu a {
-  color: #ffffff;
+  color: #F7F5FA;
   text-decoration: none;
+}
+
+.contentMenu:hover a{
+  color: #4A5966;
 }

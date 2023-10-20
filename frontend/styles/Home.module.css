@@ -1,5 +1,5 @@
 .body {
-  background-image: url("../assets/aurora.jpg");
+  background-image: url("../assets/auroraC+PAIE.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -20,6 +20,6 @@
   display: flex;
   text-align: center;
   font-family: Rochester-Regular;
-  color: #dddddd;
+  color: #F7F5FA;
   margin-top: 2%;
 }

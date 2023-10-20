@@ -12,7 +12,7 @@ function Header() {
       </div>
       <div className={styles.contentMenu}>
         <Link href="/#section1" className={styles.section}>
-          QUESTION
+          MISSIONS
         </Link>
       </div>
       <div className={styles.contentMenu}>

@@ -9,7 +9,7 @@
 
 .containerPict {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: 60vh;
     width: 40vw;
     background-color: #4A5966 ;
