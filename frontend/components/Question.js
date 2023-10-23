@@ -1,9 +1,12 @@
+/** @jsxImportSource react **/
+
 import styles from "../styles/Question.module.css";
 import extPict from "../assets/externalisation.jpeg";
 import replacePict from "../assets/Replace.jpeg";
 import collabPict from "../assets/collaboration.jpeg";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import { SectionTitle } from "./Svg";
 
 function Question() {
   const imgRef1 = useRef(null);
@@ -66,7 +69,7 @@ function Question() {
   return (
     <div className={styles.container}>
       <div className={styles.sectionTitle}>
-        <h2>MES MISSIONS</h2>
+      <SectionTitle />
       </div>
       <div className={styles.grid}>
         <div className={styles.div1}>
@@ -149,7 +152,7 @@ function Question() {
               <div className={styles.glow3}></div>
             </div>
           </div>
-          <div className={styles.textContainer3} ref={textRef3}>
+          <div className={styles.textContainer3}>
             <h3 className={styles.question}>
               Vous avez besoin d’un accompagnement sur un projet paie clef ? Vous avez besoin d’un consultant paie dédié
               sur une période de courte durée ?

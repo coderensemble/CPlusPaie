@@ -281,7 +281,7 @@
 }
 
 .title3 {
-  width: 20vw;
+  width: 18vw;
   position: absolute;
   z-index: 1;
   top: 15vh;
@@ -300,7 +300,7 @@
 .textContainer3 {
   opacity: 0;
   width: 30vw;
-  left: 86vw;
+  left: 30vw;
   margin-top: 18vh;
   display: flex;
   flex-direction: column;
