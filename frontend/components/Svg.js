@@ -1,53 +1,63 @@
 import styles from "../styles/SectionTitle.module.css";
+import React, { useEffect } from "react";
+import gsap, { Power4 } from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin';
 
 export function SectionTitle() {
 
-  // var tmax_optionsGlobal = {
-  //   repeat: -1,
-  //   repeatDelay: 1,
-  //   yoyo: true
-  // };
-  
-  // CSSPlugin.useSVGTransformAttr = true;
-  
-  // var tl = new TimelineMax(tmax_optionsGlobal),
-  //     path = 'svg *',
-  //     stagger_val = 0.0125,
-  //     duration = 2;
-  
-  // $.each($(path), function(i, el) {
-  //   tl.set($(this), {
-  //     x: '+=' + getRandom(-500, 500),
-  //     y: '+=' + getRandom(-500, 500),
-  //     rotation: '+=' + getRandom(-720, 720),
-  //     scale: 0,
-  //     opacity: 0
-  //   });
-  // });
-  
-  // var stagger_opts_to = {
-  //   x: 0,
-  //   y: 0,
-  //   opacity: 1,
-  //   scale: 1,
-  //   rotation: 0,
-  //   ease: Power4.easeInOut
-  // };
-  
-  // tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
-  
-  // var $svg = $('svg');
-  // $svg.hover(
-  //   function() {
-  //     tl.timeScale(0.15);
-  //   },
-  //   function() {
-  //     tl.timeScale(1);
-  //   });
-  
-  // function getRandom(min, max) {
-  //   return Math.random() * (max - min) + min;
-  // }
+  useEffect(() => {
+    gsap.registerPlugin(CSSPlugin); // Enregistrement du plugin CSS
+
+    const tmax_optionsGlobal = {
+      repeat: -1,
+      repeatDelay: 1,
+      yoyo: true,
+    };
+
+    const tl = gsap.timeline(tmax_optionsGlobal);
+
+    const path = 'svg *';
+    const stagger_val = 0.0125;
+    const duration = 2;
+
+    gsap.utils.toArray(path).forEach((el) => {
+      gsap.set(el, {
+        x: `+=${getRandom(-500, 500)}`,
+        y: `+=${getRandom(-500, 500)}`,
+        rotation: `+=${getRandom(-720, 720)}`,
+        scale: 0,
+        opacity: 0,
+      });
+    });
+
+    const stagger_opts_to = {
+      x: 0,
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      rotation: 0,
+      ease: Power4.easeInOut,
+    };
+
+    tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
+
+    const svg = document.querySelector('svg');
+
+    const handleMouseEnter = () => {
+      tl.timeScale(0.15);
+    };
+
+    const handleMouseLeave = () => {
+      tl.timeScale(1);
+    };
+
+    svg.addEventListener('mouseenter', handleMouseEnter);
+    svg.addEventListener('mouseleave', handleMouseLeave);
+  }, []);
+
+  function getRandom(min, max) {
+    return Math.random() * (max - min) + min;
+  }
 
   return (
     <div className={styles.body}>
