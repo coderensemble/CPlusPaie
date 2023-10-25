@@ -1,0 +1,41 @@
+.impressionnantTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.impressionnantTitle span {
+  display: inline-block;
+  color: #1c1c1c;
+  font-size: 2em;
+  padding: 10px;
+  transform-origin: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.impressionnantTitle:hover::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1vh;
+  color: #1c1c1c;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font: 700 9px/14px Tahoma, sans-serif;
+  animation: tip 2.5s forwards;
+}
+
+@keyframes tip {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  80% {
+    opacity: 1;
+  }
+}

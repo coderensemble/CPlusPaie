@@ -6,7 +6,7 @@ import replacePict from "../assets/Replace.jpeg";
 import collabPict from "../assets/collaboration.jpeg";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import { SectionTitle } from "./Svg";
+import VirevoltantTitle from "./VirevoltantTitle";
 
 function Question() {
   const imgRef1 = useRef(null);
@@ -69,7 +69,7 @@ function Question() {
   return (
     <div className={styles.container}>
       <div className={styles.sectionTitle}>
-      <SectionTitle />
+      <VirevoltantTitle title="MES MISSIONS" />
       </div>
       <div className={styles.grid}>
         <div className={styles.div1}>
