@@ -1,6 +1,39 @@
 .body {
+    margin-top: 20vh;
     height: 100vh;
     width: 100vw;
-    margin-top: 30vh;
+    background-color: #f2f2f2;
 }
 
+.carousel {
+    padding-top: 5vh;
+}
+
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.imageTitle {
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-size: 2rem;
+  color: #777;
+  margin-top: 2rem;
+}
