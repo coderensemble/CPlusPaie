@@ -12,7 +12,7 @@
 .container {
   height: 200vh;
   width: 100vw;
-  margin-top: 10vh;
+  padding-top: 10vh;
 }
 
 .sectionTitle {
@@ -101,7 +101,7 @@
   line-height: 1.2;
   margin: 0;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.701);
+  background-color: rgba(247, 245, 255, 0.701);
 }
 
 .title1:hover {
@@ -112,7 +112,7 @@
   opacity: 0;
   width: 30vw;
   left: 30vw;
-  margin-top: 18vh;
+  margin-top: 13vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +191,7 @@
   line-height: 1.2;
   margin: 0;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.701);
+  background-color: rgba(247, 245, 255, 0.701);
   /* transform: translateX(-200%); */
 }
 
@@ -203,7 +203,7 @@
   opacity: 0;
   width: 30vw;
   left: 47vw;
-  margin-top: 17vh;
+  margin-top: 13vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,7 +237,7 @@
 .img3 {
   height: 40vh;
   width: 20vw;
-  background-color: #bfd6e7;
+  color: #bfd6e7;
   box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
   transform: translateX(-200%);
 }
@@ -290,7 +290,7 @@
   line-height: 1.2;
   margin: 0;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.701);
+  background-color: rgba(247, 245, 255, 0.701);
 }
 
 .title3:hover {

@@ -78,7 +78,7 @@ function Question() {
               <h3>Externalisation Paie et Social</h3>
             </div>
             <div className={`${styles.img1} ${isVisible1 ? styles.slideInImage : ""}`} ref={imgRef1}>
-              <Image src={extPict} alt="extPict" layout="fill" objectFit="cover" />
+              <Image src={extPict} alt="extPict" layout="fill" objectFit="cover"/>
             </div>
             <div className={styles.glowWrap}>
               <div className={styles.glow}></div>

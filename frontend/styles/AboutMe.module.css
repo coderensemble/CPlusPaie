@@ -1,16 +1,58 @@
 .mainContainer {
-    height: 100vh;
-    width: 100vw;
-    padding-top: 10rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  margin-top: 20vh;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20vh 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sectionTitle {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .containerPict {
-    display: flex;
-    justify-content: flex-end;
-    height: 60vh;
-    width: 40vw;
-    background-color: #4A5966 ;
+  width: 50%;
+  height: 80%;
+  margin-top: 10vh;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 10vw;
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.containerPict img {
+  justify-content: center;
+  align-items: center;
+  /* -webkit-filter: grayscale(100%); */
+  filter: grayscale(100%);
+  /* -webkit-transition: .3s ease-in-out; */
+  transition: 0.3s ease-in-out;
+}
+
+.containerPict :hover img {
+  /* -webkit-filter: grayscale(0); */
+  filter: grayscale(0) brightness(0.7);
+}
+
+.textContainer {
+  padding-top: 10vh;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+}
+
+.textContainer p {
+  padding: 4rem;
+  justify-content: center;
+  text-align: center;
 }

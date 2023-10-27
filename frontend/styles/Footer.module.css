@@ -9,9 +9,12 @@
 }
 
 .aboutMeContainer {
+    padding-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    color: #F7F5FA;
 }
 
 .law {
