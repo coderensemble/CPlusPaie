@@ -1,6 +1,7 @@
 /* Contact.module.css */
 
 .mainContainer {
+  padding-top: 12vh;
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -13,6 +14,8 @@
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 3;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .button {
@@ -74,7 +77,7 @@
 
 .input,
 .textarea {
-  width: 100%;
+  width: 100vw;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -87,11 +90,70 @@
 }
 
 .imageContainer {
-  flex: 1;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 40vw;
+  height: 80vh;
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0);
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transition: 0.5s;
 }
 
+.bloc {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
 
+.image1Container {
+  position: absolute;
+  left: 15rem;
+  opacity: 1;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.image2Container {
+  position: absolute;
+  opacity: 0.8;
+  left: 15rem;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.image3Container {
+  position: absolute;
+  opacity: 0.8;
+  left: 15rem;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.image4Container {
+  position: absolute;
+  opacity: 0.8;
+  left: 15rem;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.imageContainer:hover .image1Container{
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
+
+.imageContainer:hover .image2Container{
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.imageContainer:hover .image3Container{
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.imageContainer:hover .image4Container{
+  transform: translate(160px, -160px);
+  opacity: 1;
+}

@@ -29,7 +29,7 @@ const VirevoltantTitle = ({ title }) => {
           rotation: 0,
           scale: 1,
           opacity: 1,
-          duration: 0.4, // Durée de 0.6 secondes pour l'apparition
+          duration: 0.1, // Durée de 0.6 secondes pour l'apparition
           onComplete: () => {
             if (index === letters.length - 1) {
               setIsFullyDisplayed(true);

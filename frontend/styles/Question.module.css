@@ -1,18 +1,7 @@
-/* @keyframes reveal {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
-
 .container {
   height: 200vh;
   width: 100vw;
-  padding-top: 10vh;
+  padding-top: 12vh;
 }
 
 .sectionTitle {
@@ -21,7 +10,7 @@
 }
 
 .grid {
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   display: grid;
   grid-template-rows: repeat(3, 60vh);
   grid-template-columns: repeat(2, 50vw);

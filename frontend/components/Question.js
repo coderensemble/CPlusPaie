@@ -91,7 +91,7 @@ function Question() {
             </h3>
             <div className={styles.answer}>
               <div>
-                <p>Je me charge de l’ensemble de la gestion de votre volet RH :</p>
+                <p>Je me charge de l’ensemble de la gestion de votre volet RH:</p>
                 <br />
               </div>
               <div>
@@ -158,7 +158,7 @@ function Question() {
               sur une période de courte durée ?
             </h3>
             <div className={styles.answer}>
-              e peux piloter divers projets paie : - Mise en place d’un nouveau logiciel et/ou SIRH - Remplacement ou
+              Je peux piloter divers projets paie : - Mise en place d’un nouveau logiciel et/ou SIRH - Remplacement ou
               accompagnement provisoire de votre responsable paie - Audit des pratiques et de la conformité de votre
               paie…
             </div>

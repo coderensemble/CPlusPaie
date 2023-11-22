@@ -1,6 +1,6 @@
 import styles from "../styles/Contact.module.css";
 import Image from "next/image";
-import carteVisite from "../assets/image 6.png";
+import carteVisite from "../assets/Carte de visite CF.png";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareXmark } from "@fortawesome/free-solid-svg-icons";
@@ -18,6 +18,7 @@ function Contact() {
       <div className={styles.sectionTitle}>
         <VirevoltantTitle title="CONTACT" />
       </div>
+      <div>
       <div className={styles.textContainer}>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
@@ -33,6 +34,7 @@ function Contact() {
         <button className={styles.button} onClick={openPopup}>
           Demande de devis
         </button>
+        </div>
         {isPopupOpen && (
           <div className={styles.popup}>
             <div className={styles.contactForm}>
@@ -48,8 +50,13 @@ function Contact() {
           </div>
         )}
       </div>
+      <div className={styles.bloc}>
       <div className={styles.imageContainer}>
-        <Image className={styles.carteVisite} src={carteVisite} alt="carteVisite" />
+        <div className={styles.image1Container}><Image className={styles.carteVisite1} src={carteVisite} alt="carteVisite1" /></div>
+        <div className={styles.image2Container}><Image className={styles.carteVisite2} src={carteVisite} alt="carteVisite2" /></div>
+        <div className={styles.image3Container}><Image className={styles.carteVisite3} src={carteVisite} alt="carteVisite3" /></div>
+        <div className={styles.image4Container}><Image className={styles.carteVisite4} src={carteVisite} alt="carteVisite4" /></div>
+      </div>
       </div>
     </div>
   );

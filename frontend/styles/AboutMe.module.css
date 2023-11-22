@@ -1,5 +1,5 @@
 .mainContainer {
-  margin-top: 20vh;
+  padding-top: 12vh;
   position: relative;
   width: 100vw;
   height: 100%;
@@ -13,6 +13,8 @@
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 3;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .containerPict {
@@ -25,7 +27,6 @@
   grid-column-end: 3;
   margin-left: 10vw;
   box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .containerPict img {

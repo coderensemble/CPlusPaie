@@ -1,15 +1,22 @@
 .body {
-    margin-top: 20vh;
-    height: 150vh;
+    margin-top: 30vh;
+    height: 120vh;
     width: 100vw;
     background-color: #5A739A;
 }
 
+.sectionTitle {
+  padding-top: 12vh;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .carousel {
-    padding-top: 5vh;
+    padding-top: 2vh;
 }
 
 .carouselItem {
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
