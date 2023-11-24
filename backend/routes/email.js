@@ -7,6 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 router.post("/", async (req, res) => {
     const { name, email, message } = req.body;
+    console.log("Received Email Data:", req.body);
   
     const mailOptions = {
       from: 'onboarding@resend.dev',
