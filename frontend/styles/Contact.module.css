@@ -29,6 +29,7 @@
   cursor: pointer;
   width: 20vw;
   margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 
 .button:hover {
@@ -44,6 +45,7 @@
   text-align: center;
   /* border: 1px solid black; */
   margin-left: 2rem;
+  margin-top: 10vh;
   padding: 2rem;
 }
 
@@ -77,7 +79,7 @@
 
 .input,
 .textarea {
-  width: 100vw;
+  width: 40vw;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -93,7 +95,7 @@
   position: relative;
   width: 40vw;
   height: 80vh;
-  margin-top: 50px;
+  margin-top: 10vh;
   background: rgba(0, 0, 0, 0);
   transform: rotate(-30deg) skew(25deg) scale(0.8);
   transition: 0.5s;
