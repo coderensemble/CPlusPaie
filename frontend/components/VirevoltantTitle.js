@@ -29,7 +29,7 @@ const VirevoltantTitle = ({ title }) => {
           rotation: 0,
           scale: 1,
           opacity: 1,
-          duration: 0.1, // Durée de 0.6 secondes pour l'apparition
+          duration: 0.1, 
           onComplete: () => {
             if (index === letters.length - 1) {
               setIsFullyDisplayed(true);
@@ -39,21 +39,21 @@ const VirevoltantTitle = ({ title }) => {
       );
     });
 
-    const handleMouseEnter = () => {
-      tl.timeScale(0.15);
-      tl.play();
+    const handleIntersection = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          observer.unobserve(entry.target);
+          tl.play();
+        }
+      });
     };
 
-    const handleMouseLeave = () => {
-      tl.timeScale(1);
-    };
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
-    titleElement.addEventListener('mouseenter', handleMouseEnter);
-    titleElement.addEventListener('mouseleave', handleMouseLeave);
+    letters.forEach(letter => observer.observe(letter));
 
     return () => {
-      titleElement.removeEventListener('mouseenter', handleMouseEnter);
-      titleElement.removeEventListener('mouseleave', handleMouseLeave);
+      observer.disconnect();
     };
   }, [title]);
 

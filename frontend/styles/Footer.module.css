@@ -2,11 +2,12 @@
     width: 100vw;
     height: 20vh;
     background-color: #4A5966 ;
+    display: block;
 }
 
-.list {
+/* .list {
     list-style-type: none;
-}
+} */
 
 .aboutMeContainer {
     padding-top: 2rem;

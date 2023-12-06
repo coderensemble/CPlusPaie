@@ -1,5 +1,5 @@
-.body {
-    margin-top: 30vh;
+.mainContainer {
+    margin-top: 20vh;
     height: 120vh;
     width: 100vw;
     background-color: #5A739A;
@@ -8,7 +8,7 @@
 .sectionTitle {
   padding-top: 12vh;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .carousel {
@@ -34,13 +34,18 @@
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: bold;
   color: #333;
 }
 
+.titlePos {
+  margin-top: 2vh;
+  font-size: 1vw;
+}
+
 .description {
-  font-size: 2rem;
+  font-size: 1vw;
   color: #777;
   margin-top: 2rem;
 }

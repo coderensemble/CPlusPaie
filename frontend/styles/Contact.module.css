@@ -1,12 +1,13 @@
 /* Contact.module.css */
 
 .mainContainer {
-  padding-top: 12vh;
-  height: 100vh;
+  margin-top: 10vh;
+  height: 80vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 20vh 1fr 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20vh 30vh 30vh;
+  grid-template-columns: repeat(2, 50vw);
+  overflow: hidden;
 }
 
 .sectionTitle {
@@ -15,11 +16,10 @@
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .button {
-  
   background-color: #161616; 
   border-radius: 5px;
   color: #fff; 
@@ -30,23 +30,23 @@
   width: 20vw;
   margin-bottom: 10vh;
   margin-top: 10vh;
+  font-size: 1.5vw;
 }
 
 .button:hover {
-  background-color: #0056b3; 
+  background-color: #EB5E59; 
 }
 
 .textContainer {
-  width: 50vw;
+  width: 40vw;
   display: flex;
   justify-content:space-around;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  /* border: 1px solid black; */
-  margin-left: 2rem;
-  margin-top: 10vh;
-  padding: 2rem;
+  text-align:justify;
+  margin-left: 2vw;
+  margin-top: 5vh;
+  font-size: 1.5vw;
 }
 
 .popup {
@@ -63,18 +63,18 @@
 
 .contactForm {
   flex: 1;
-  padding: 1rem;
+  padding: 1vw;
 }
 
 .heading {
-  font-size: 24px;
-  margin-bottom: 1rem;
+  font-size: 2vw;
+  margin-bottom: 1vh;
 }
 
 .inputContainer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1vh;
 }
 
 .input,
@@ -88,7 +88,7 @@
 
 .textarea {
   resize: vertical;
-  min-height: 150px;
+  min-height: 15vh;
 }
 
 .imageContainer {
@@ -104,38 +104,16 @@
 .bloc {
   grid-row-start: 2;
   grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-content: center;
+  margin-left: 10vw;
 }
 
-.image1Container {
+.image1Container, .image2Container, .image3Container, .image4Container {
   position: absolute;
   left: 15rem;
   opacity: 1;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.image2Container {
-  position: absolute;
-  opacity: 0.8;
-  left: 15rem;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.image3Container {
-  position: absolute;
-  opacity: 0.8;
-  left: 15rem;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.image4Container {
-  position: absolute;
-  opacity: 0.8;
-  left: 15rem;
   width: 100%;
   transition: 0.5s;
 }

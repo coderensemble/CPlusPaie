@@ -67,9 +67,9 @@ function Question() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.mainContainer}>
       <div className={styles.sectionTitle}>
-      <VirevoltantTitle title="MES MISSIONS" />
+        <VirevoltantTitle title="MES MISSIONS" />
       </div>
       <div className={styles.grid}>
         <div className={styles.div1}>
@@ -78,7 +78,7 @@ function Question() {
               <h3>Externalisation Paie et Social</h3>
             </div>
             <div className={`${styles.img1} ${isVisible1 ? styles.slideInImage : ""}`} ref={imgRef1}>
-              <Image src={extPict} alt="extPict" layout="fill" objectFit="cover"/>
+              <Image src={extPict} alt="extPict" layout="fill" objectFit="cover" />
             </div>
             <div className={styles.glowWrap}>
               <div className={styles.glow}></div>
@@ -86,7 +86,7 @@ function Question() {
           </div>
           <div className={styles.textContainer1}>
             <h3 className={styles.question}>
-              Vous êtes une TPE/PME et avez besoin d’un expert paie et RH dédié quelques heures par semaine ? <br/>Vous êtes
+              Vous êtes une TPE/PME et avez besoin d’un expert paie et RH dédié quelques heures par semaine ? Vous êtes
               un expert-comptable et n’avez pas de service social ?
             </h3>
             <div className={styles.answer}>
@@ -94,7 +94,7 @@ function Question() {
                 <p>Je me charge de l’ensemble de la gestion de votre volet RH:</p>
                 <br />
               </div>
-              <div>
+              <div className={styles.liste}>
                 <ul>
                   <li>DPAE + contrat de travail + avenants…</li>
                   <li>Etablissement mensuel du bulletin de paie et de la DSN</li>
@@ -127,12 +127,22 @@ function Question() {
               êtes à la recherche d’une compétence clef à temps partagé ?
             </h3>
             <div className={styles.answer}>
-              Je m’adapte à vos besoins et créé une offre sur mesure, évolutive suivant la vie de votre cabinet : -
-              Responsable paie à temps partagé : un véritable support pour les questions techniques paie ou les prises
-              de position sur des sujets complexes, une formation des équipes avec une veille paie et social mensuelle -
-              Remplacement provisoire des gestionnaires de paie en cas de maladie, départs imprévus, arrivée massive de
-              nouveaux clients… - Accompagnement sur des missions précises : élection CSE, audit paie et social, accord
-              d’intéressement…
+            <p>Je m’adapte à vos besoins et créé une offre sur mesure, évolutive suivant la vie de votre cabinet :</p> 
+            <br />
+              <ul>
+                <li>
+                  Responsable paie à temps partagé : un véritable support pour les questions techniques paie ou les
+                  prises de position sur des sujets complexes, une formation des équipes avec une veille paie et social
+                  mensuelle
+                </li>
+                <li>
+                  Remplacement provisoire des gestionnaires de paie en cas de maladie, départs imprévus, arrivée massive
+                  de nouveaux clients…
+                </li>
+                <li>
+                  Accompagnement sur des missions précises : élection CSE, audit paie et social, accord d’intéressement…
+                </li>
+              </ul>
             </div>
             <h3 className={styles.avantage}>
               L’avantage : optimiser vos coûts, tout en apportant un service de qualité à vos clients et une

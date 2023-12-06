@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: transparent;
   z-index: 999;
   display: flex;
@@ -9,8 +9,8 @@
 }
 
 .contentMenu {
-  margin-top: 1rem;
-  padding: 1rem 1rem;
+  margin-top: 2vh;
+  padding: 1vh 1vw;
   background-color: rgba(90, 115, 154, 0.5);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 2);
   border-radius: 5px;
@@ -18,15 +18,15 @@
 }
 
 .contentMenu:hover {
-  background-color: #F7F5FA;
+  background-color: #f7f5fa;
   cursor: pointer;
 }
 
 .menu a {
-  color: #F7F5FA;
+  color: #f7f5fa;
   text-decoration: none;
 }
 
-.contentMenu:hover a{
-  color: #4A5966;
+.contentMenu:hover a {
+  color: #4a5966;
 }

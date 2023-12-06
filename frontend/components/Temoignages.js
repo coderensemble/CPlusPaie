@@ -47,18 +47,23 @@ function Temoignages() {
         <div className={styles.carouselItem}>
           <Image src={project4} alt="Image 4" />
           <div className={styles.imageTitle}>
-            <h2 className={styles.title}>Titre de l'image 4</h2>
+            <h2 className={styles.title}>Morgane SAULNIER – Responsable paie</h2>
+            <h3 className={styles.titlePos}>Remplacement provisoire et projet de transition en collaboration le nouveau responsable paie</h3>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.
+            En attendant mon recrutement, Carole a effectué en autonomie les paies des 400 collaborateurs de la société.
+Nous avons ensuite travaillé ensemble de juin 2023 à aout 2023, soit 3 mois d’expérience riche et intense avec une transmission de l’intégralité des spécificités de chaque dossier.
+Un travail d’audit a tout d’abord été effectué par Carole sur les différentes sociétés, puis elle a été force de proposition concernant les différents paramétrages existants.
+Son expertise en paie a permis de limiter les erreurs et d’apporter un cadre rassurant durant mes premiers mois d’intégration. 
+Carole a le recul nécessaire pour traiter les situations complexes, régularisations en tout genre, et limiter les litiges avec les salariés.
+J’ai aimé allier mon expérience et mes pratiques aux siennes.
+Pendant notre collaboration, elle s’est rendue réactive, disponible et a été un réel soutien supplémentaire durant les périodes de paie.
             </p>
           </div>
         </div>,
       ];
 
       return (
-        <div className={styles.body}>
+        <div className={styles.mainContainer}>
           <div className={styles.sectionTitle}>
             <VirevoltantTitle title="TEMOIGNAGES" />
           </div>

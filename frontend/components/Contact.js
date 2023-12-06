@@ -18,6 +18,15 @@ function Contact() {
     setIsPopupOpen(!isPopupOpen);
   };
 
+  const resetFormAndClosePopup = () => {
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+    setIsPopupOpen(false);
+  };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -43,6 +52,7 @@ function Contact() {
 
       if (response.ok) {
         console.log("Email sent successfully!");
+        resetFormAndClosePopup();
         // Ajoutez ici le code pour gérer le succès de l'envoi du courriel
       } else {
         console.error("Failed to send email.");
@@ -62,15 +72,9 @@ function Contact() {
       <div className={styles.textButton}>
         <div className={styles.textContainer}>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-            sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-            ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-            nulla pariatur?
+            Comme chaque mission est unique, je vous invite à remplir le questionnaire ci-dessous pour comprendre votre
+            besoin, voire si je peux y répondre et vous proposer un devis cohérent et sur-mesure. Je m’engage à vous
+            recontacter dans les 48 heures. <br/><br/>A très vite pour une future collaboration.
           </p>
           <button className={styles.button} onClick={openPopup}>
             Demande de devis
