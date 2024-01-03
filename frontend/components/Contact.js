@@ -22,6 +22,8 @@ function Contact() {
     setFormData({
       name: "",
       email: "",
+      telephone: "",
+      ccn:"",
       message: "",
     });
     setIsPopupOpen(false);
@@ -73,7 +75,7 @@ function Contact() {
         <div className={styles.textContainer}>
           <p>
             Comme chaque mission est unique, je vous invite à remplir le questionnaire ci-dessous pour comprendre votre
-            besoin, voire si je peux y répondre et vous proposer un devis cohérent et sur-mesure. Je m’engage à vous
+            besoin, voire si je peux y répondre et vous proposer un devis cohérent et sur-mesure.<br/><br/> Je m’engage à vous
             recontacter dans les 48 heures. <br/><br/>A très vite pour une future collaboration.
           </p>
           <button className={styles.button} onClick={openPopup}>
@@ -89,22 +91,58 @@ function Contact() {
                 <input
                   className={styles.input}
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Nom de société"
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
                 />
+                <div className={styles.contact}>
                 <input
                   className={styles.input}
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="E-mail"
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
                 />
+                <input
+                  className={styles.input}
+                  type="text"
+                  placeholder="Téléphone"
+                  name="email"
+                  value={formData.telephone}
+                  onChange={handleInputChange}
+                />
+                </div>
+                <div className={styles.contact}>
+                <input
+                  className={styles.input}
+                  type="text"
+                  placeholder="CCN"
+                  name="ccn"
+                  value={formData.ccn}
+                  onChange={handleInputChange}
+                />
+                <input
+                  className={styles.input}
+                  type="text"
+                  placeholder="Nombre de salariés"
+                  name="ccn"
+                  value={formData.nbrSalaries}
+                  onChange={handleInputChange}
+                />
+                <input
+                  className={styles.input}
+                  type="text"
+                  placeholder="Durée de la mission"
+                  name="ccn"
+                  value={formData.duree}
+                  onChange={handleInputChange}
+                />
+                </div>
                 <textarea
                   className={styles.textarea}
-                  placeholder="Your Message"
+                  placeholder="La mission demandée en quelques mots"
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}></textarea>
